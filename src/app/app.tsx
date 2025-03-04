@@ -12,8 +12,8 @@ export const App = () => {
   return (
     <div style={{ maxWidth: "600px", margin: "24px auto" }}>
       <IgrGrid data={sampleData} primaryKey="id" width="100%" style={{ "--ig-size": "var(--ig-size-small)" }}>
-        <IgrColumn field="name" header="Name" dataType="String" />
-        <IgrColumn field="country" header="Country" dataType="String" />
+        <IgrColumn field="name" header="Name" dataType="String" cellStyles={{ justifyContent: "flex-end" }} />
+        <IgrColumn field="country" header="Country" dataType="String" cellClasses={{ sampleClass: () => true }} />
         <IgrColumn field="age" header="Age" />
       </IgrGrid>
     </div>
